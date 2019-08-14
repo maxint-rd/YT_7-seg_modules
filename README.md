@@ -1,32 +1,33 @@
-***WORK IN PROGRESS***
+# WORK IN PROGRESS 
+
 --- More info later... ---
 
 
-**Dimensions**
+***Dimensions***
 Perfboard 13x23 holes, +/- 34*58mm
 
-**LAYOUT**
+***Board layout***
  - Top section (15 holes) for 7-segment digit (7x14 holes) 
  - Bottom section (8 holes) for connectors, 2x 5-pin headers, top pin in row 17, female input left, male output right.
 
-**Connections**
+***Connections***
 2x 5-pin headers, pin numbering top-to-bottom
 
-Input (female/left):
+**Input (female/left):**
 - 1- GND
 - 2- Clock SRCLK - connect to SPI-SCK
 - 3- Latch RCLK  - connect to SPI-SS
 - 4- Serial SER  - connect to SPI-MOSI
 - 5- VCC (5V)
 
-Output (male/right):
+**Output (male/right):**
 - 1- GND
 - 2- Clock SRCLK - connect to SPI-SCK
 - 3- Latch RCLK  - connect to SPI-SS
 - 4- Cascade SER Qh' - to SER of next module
 - 5- VCC (5V)
 
-**Communication Protocol**
+***Communication Protocol***
 595-shift-register SPI-compatible (see pinout below).
 8-bit bytes are clocked-in per bit (LSBFIRST) and latched per byte.
 Each byte contains two nibbles. The low nibble (bits 0-3) contains the digit as binary coded decimal (BCD). The high nibble (bits 4-7) can be used for module specific control.
@@ -37,7 +38,7 @@ control | digit
 
 The highest bit (bit 7) of the control nibble is reserved for an optional decimal point.
 
-# 595 Pinouts & connections
+**595 Pinouts & connections**
 The 74HC595 shift register requires three pins plus VCC/GND.
 The shift register can be connected to the hardware SPI pin for best speed.
 - Default pins for ESP8266:   SS=15, MOSI=13, SCLK=14
