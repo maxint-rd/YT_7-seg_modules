@@ -13,19 +13,19 @@ Perfboard 13x23 holes, +/- 34*58mm
 ## Connections
 2x 5-pin headers, pin numbering top-to-bottom
 
-***Input (female/left):***
-- 1- GND
-- 2- Clock SRCLK - connect to SPI-SCK
+***Input (front/female/left):***
+- 1- VCC (5V)
+- 2- Serial SER  - connect to SPI-MOSI
 - 3- Latch RCLK  - connect to SPI-SS
-- 4- Serial SER  - connect to SPI-MOSI
-- 5- VCC (5V)
+- 4- Clock SRCLK - connect to SPI-SCK
+- 5- GND
 
-***Output (male/right):***
-- 1- GND
-- 2- Clock SRCLK - connect to SPI-SCK
+***Output (front/male/right):***
+- 1- VCC (5V)
+- 2- Cascade SER Qh' - to SER of next module
 - 3- Latch RCLK  - connect to SPI-SS
-- 4- Cascade SER Qh' - to SER of next module
-- 5- VCC (5V)
+- 4- Clock SRCLK - connect to SPI-SCK
+- 5- GND
 
 ## Communication Protocol
 595-shift-register SPI-compatible (see pinout below).
