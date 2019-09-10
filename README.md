@@ -1,5 +1,8 @@
 # WORK IN PROGRESS 
 
+
+This project is still being developed. 
+
 --- More info later... ---
 
 
@@ -73,3 +76,8 @@ Pinout 74HC595 shift register DIP and SMD model:
   8 -+     +- 9       8: GND          9: Cascade SER Qh' - to SER of next chip
      +-----+
 ```
+
+## Links
+ - [OpenSCAD 3D printable diffuser](https://www.thingiverse.com/thing:3843620)
+ - [Short demo of perfboard module 7SEG_mx01_74HC595_CD4511](https://youtu.be/kZXWjLeaHmE)
+ - [Short demo of breadboard module 7SEG_mx01_74HC595_CD4511](https://youtu.be/Lo2c12xWo7Q)
