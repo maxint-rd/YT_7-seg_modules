@@ -6,6 +6,18 @@
 ## Dimensions
 Perfboard 13x23 holes, +/- 34*58mm
 
+[<img align="right" src="https://github.com/maxint-rd/YT_7-seg_modules/blob/master/images/7SEG_mx01_74HC595_CD4511_front_480.jpg" width=480>](https://github.com/maxint-rd/YT_7-seg_modules/blob/master/images/7SEG_mx01_74HC595_CD4511_front.jpg)
+### Example module 7SEG_mx01_74HC595_CD4511
+ - Size (h * w): 63.2mm * 33.7mm incl. margin 
+ - height: 63.2mm, 23 holes + margin
+ - width: 33.7mm, 13 holes + margin
+ 
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
 ### Board layout
  - Top section (15 holes) for 7-segment digit (7x14 holes) 
  - Bottom section (8 holes) for connectors, 2x 5-pin headers, top pin in row 17, female input left, male output right.
@@ -14,18 +26,18 @@ Perfboard 13x23 holes, +/- 34*58mm
 2x 5-pin headers, pin numbering top-to-bottom
 
 ***Input (front/female/left):***
-- 1- VCC (5V)
-- 2- Serial SER  - connect to SPI-MOSI
-- 3- Latch RCLK  - connect to SPI-SS
-- 4- Clock SRCLK - connect to SPI-SCK
-- 5- GND
+- 1- Vcc - VCC (5V)
+- 2- Din - Serial SER  - connect to SPI-MOSI
+- 3- Lat - Latch RCLK  - connect to SPI-SS
+- 4- Clk - Clock SRCLK - connect to SPI-SCK
+- 5- Gnd - GND
 
 ***Output (front/male/right):***
-- 1- VCC (5V)
-- 2- Cascade SER Qh' - to SER of next module
-- 3- Latch RCLK  - connect to SPI-SS
-- 4- Clock SRCLK - connect to SPI-SCK
-- 5- GND
+- 1- Vcc - VCC (5V)
+- 2- Dou - Cascade SER Qh' - to SER of next module
+- 3- Lat - Latch RCLK  - connect to SPI-SS
+- 4- Clk - Clock SRCLK - connect to SPI-SCK
+- 5- Gnd - GND
 
 ## Communication Protocol
 595-shift-register SPI-compatible (see pinout below).
