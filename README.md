@@ -14,6 +14,8 @@ Perfboard 13x23 holes, +/- 34*58mm
  - Size (h * w): 63.2mm * 33.7mm incl. margin 
  - height: 63.2mm, 23 holes + margin
  - width: 33.7mm, 13 holes + margin
+
+*NOTE: on this example module IN and OUT are reversed. See Connections section below for revised specifications.*
  
 &nbsp;<br>
 &nbsp;<br>
@@ -23,19 +25,19 @@ Perfboard 13x23 holes, +/- 34*58mm
 
 ### Board layout
  - Top section (15 holes) for 7-segment digit (7x14 holes) 
- - Bottom section (8 holes) for connectors, 2x 5-pin headers, top pin in row 17, female input left, male output right.
+ - Bottom section (8 holes) for connectors, 2x 5-pin headers, top pin in row 17, male input left, female output right.
 
 ## Connections
 2x 5-pin headers, pin numbering top-to-bottom
 
-***Input (front/female/left):***
+***Input (front/male/right):***
 - 1- Vcc - VCC (5V)
 - 2- Din - Serial SER  - connect to SPI-MOSI
 - 3- Lat - Latch RCLK  - connect to SPI-SS
 - 4- Clk - Clock SRCLK - connect to SPI-SCK
 - 5- Gnd - GND
 
-***Output (front/male/right):***
+***Output (front/female/left):***
 - 1- Vcc - VCC (5V)
 - 2- Dou - Cascade SER Qh' - to SER of next module
 - 3- Lat - Latch RCLK  - connect to SPI-SS
