@@ -1,13 +1,13 @@
 # WORK IN PROGRESS 
 
 
-This project is still being developed. 
+This project aims to create custom made 7-segment display modules that can be daisychained to form multi-digit displays. They may vary in implementation, but share a common interface and layout to ensure compatibilty.
 
---- More info later... ---
+Note that this project is still being developed, so specifications may be changed over time.
 
 
 ## Dimensions
-Perfboard 13x23 holes, +/- 34*58mm
+Perfboard 13x23 holes, +/- 34*60mm
 
 [<img align="right" src="https://github.com/maxint-rd/YT_7-seg_modules/blob/master/images/7SEG_mx01_74HC595_CD4511_front_480.jpg" width=480>](https://github.com/maxint-rd/YT_7-seg_modules/blob/master/images/7SEG_mx01_74HC595_CD4511_front.jpg)
 ### Example module 7SEG_mx01_74HC595_CD4511
@@ -15,7 +15,7 @@ Perfboard 13x23 holes, +/- 34*58mm
  - height: 63.2mm, 23 holes + margin
  - width: 33.7mm, 13 holes + margin
 
-*NOTE: on this example module IN and OUT are reversed. See Connections section below for revised specifications.*
+*NOTE: See Connections section below for revised specifications of module IN and OUT.*
  
 &nbsp;<br>
 &nbsp;<br>
